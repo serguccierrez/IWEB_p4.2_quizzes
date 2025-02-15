@@ -171,7 +171,7 @@ struct QuizzPlayView: View {
             return
         }
 
-        guard let url = URL(string: "https://quiz.dit.upm.es/api/quizzes/\(quizId)/check?answer=\(userAnswer)&token=6a8fecdb299133b2a398") else {
+        guard let url = URL(string: "https://quiz.dit.upm.es/api/quizzes/\(quizId)/check?answer=\(userAnswer)&token=<YOUR_API_TOKEN>") else {
             print("Error: URL no válida")
             return
         }
@@ -217,7 +217,7 @@ struct QuizzPlayView: View {
 
     // Obtiene la respuesta correcta para el cuestionario.
     private func correcta(for quizId: Int) {
-        guard let url = URL(string: "https://quiz.dit.upm.es/api/quizzes/\(quizId)/answer?token=6a8fecdb299133b2a398") else {
+        guard let url = URL(string: "https://quiz.dit.upm.es/api/quizzes/\(quizId)/answer?token=<YOUR_API_TOKEN>") else {
             print("Error: URL no válida")
             return
         }

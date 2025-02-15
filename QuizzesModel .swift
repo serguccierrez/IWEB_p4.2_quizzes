@@ -42,7 +42,7 @@ enum QuizzesModelError: LocalizedError {
     func getQuizzes() throws {
         
         // Define la URL de la API para obtener 10 cuestionarios aleatorios.
-        guard let apiURL = URL(string: "https://quiz.dit.upm.es/api/quizzes/random10?token=6a8fecdb299133b2a398") else {
+        guard let apiURL = URL(string: "https://quiz.dit.upm.es/api/quizzes/random10?token=<YOUR_API_TOKEN>") else {
             throw QuizzesModelError.internalError(msg: "URL inválida") // Lanza un error si la URL es inválida.
         }
         

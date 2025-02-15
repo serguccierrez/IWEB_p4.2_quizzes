@@ -194,7 +194,7 @@ struct QuizListShow: View {
         let isFavourite = favoriteQuizzes.contains(quizId)
         let httpMethod = isFavourite ? "DELETE" : "PUT"
         
-        guard let url = URL(string: "https://quiz.dit.upm.es/api/users/tokenOwner/favourites/\(quizId)?token=6a8fecdb299133b2a398") else {
+        guard let url = URL(string: "https://quiz.dit.upm.es/api/users/tokenOwner/favourites/\(quizId)?token=<YOUR_API_TOKEN>") else {
             print("Error: URL no válida")
             return
         }
